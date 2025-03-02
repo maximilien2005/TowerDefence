@@ -3,6 +3,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Windows;
 
 public class Pv : MonoBehaviour
 {
@@ -36,6 +37,10 @@ public class Pv : MonoBehaviour
         if (SliderLife != null) {
             SliderLife.value = (float)vieGameObject / (float)vieMax;
             AffichageVie.text = SliderLife.value * 100 + " %";
+        }
+        if (vieGameObject <= 0) {
+
+            Application.Quit();
         }
 
     }

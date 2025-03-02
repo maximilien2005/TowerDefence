@@ -17,11 +17,11 @@ public class LifeMonstre : MonoBehaviour
     {
         vie -= degats;
         if (vie <= 0) {
-
-            Monney.argent += lootMoney;
+            Monney.changementMoney(lootMoney);
+            Destroy(gameObject);
         }
+        
     }
-
 
     // Update is called once per frame
     void Update()

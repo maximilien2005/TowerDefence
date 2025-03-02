@@ -330,7 +330,6 @@ MonoBehaviour:
   collisionActuelle: []
   Transparent: {fileID: 2100000, guid: ef42cb55ec95f954aa57d375536fdfba, type: 2}
   Collision: {fileID: 2100000, guid: 6a3738dd908b2a6459fce40db756752f, type: 2}
-  ScriptAttaque: {fileID: 0}
 --- !u!64 &7128539965485294794
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -857,6 +856,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 3401500383889357921}
     m_Modifications:
     - target: {fileID: -2626181759930224394, guid: 60d0ece4d27effd45b933fc92c0c3fc2, type: 3}
+      propertyPath: Attaque
+      value: 
+      objectReference: {fileID: 7699527207591161423}
+    - target: {fileID: -2626181759930224394, guid: 60d0ece4d27effd45b933fc92c0c3fc2, type: 3}
       propertyPath: tourelle
       value: 
       objectReference: {fileID: 5791905745186330080}
@@ -927,10 +930,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4558274722627640607, guid: 60d0ece4d27effd45b933fc92c0c3fc2, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 7699527207591161423}
   m_SourcePrefab: {fileID: 100100000, guid: 60d0ece4d27effd45b933fc92c0c3fc2, type: 3}
 --- !u!4 &2209538016284914485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7586257424098723908, guid: 60d0ece4d27effd45b933fc92c0c3fc2, type: 3}
   m_PrefabInstance: {fileID: 8641871056550837105}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5236605846924682862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4558274722627640607, guid: 60d0ece4d27effd45b933fc92c0c3fc2, type: 3}
+  m_PrefabInstance: {fileID: 8641871056550837105}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7699527207591161423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5236605846924682862}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e244834c506ab684c893bc75415abba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degats: 2
+  nbdeTir: 1
+  cooldown: 1

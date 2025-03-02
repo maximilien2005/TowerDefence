@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478cc119d5eeb6446bd0be17a0c3a9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intervalSpawn: 10
+  intervalSpawn: 5
   typeDeMonstre:
   - {fileID: 2741835037363737612, guid: 9e2d729be18f6fb4dbd425c839bf25da, type: 3}
 --- !u!114 &9130701971132730925

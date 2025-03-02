@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c6af7136e72b24285e5235213252d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vie: 2
-  intervalVie: 1
+  intervalVie: 2
+  vie: 5
 --- !u!114 &2670439455939482826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,10 +116,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9536e269d46ca644aca11c4149a7b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 5
+  vitesse: 3
+  intervalVitesse: 2
   degats: 10
   IntervalDegatRandom: 5
-  TargetPosition: {x: 0, y: 0, z: 0}
 --- !u!136 &2486953056698258100
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -24,6 +24,7 @@ public class SpawnMonstre : MonoBehaviour
             time += Time.deltaTime;
 
             if (time > intervalSpawn) {
+                intervalSpawn -= 0.1f;
                 time = 0;
                 spawnMonster();
 
@@ -31,6 +32,7 @@ public class SpawnMonstre : MonoBehaviour
 
         }
     }
+
     void spawnMonster()
     {
         GameObject monstre = typeDeMonstre[Random.Range(0, typeDeMonstre.Length)];

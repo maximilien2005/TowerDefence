@@ -65,6 +65,10 @@ PrefabInstance:
       value: Route
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6cfc72d3bfd776a49b2a86e79a3683b9, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6cfc72d3bfd776a49b2a86e79a3683b9, type: 3}
       propertyPath: m_TagString
       value: Chemain
       objectReference: {fileID: 0}

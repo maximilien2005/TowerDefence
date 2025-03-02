@@ -9,7 +9,7 @@ public class TourellePlacable : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag != null && collision.transform.CompareTag("Chemain") == true) {
+        if (collision.transform.tag != null && (collision.transform.CompareTag("Chemain") == true || collision.transform.CompareTag("Chateaux"))){
 
             collisionActuelle.Add(collision.transform.gameObject);
             ChangementCouleur(Collision);
@@ -20,7 +20,7 @@ public class TourellePlacable : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.transform.tag != null && collision.transform.CompareTag("Chemain") == true)
+        if (collision.transform.tag != null && (collision.transform.CompareTag("Chemain") == true || collision.transform.CompareTag("Chateaux")))
         {
             Debug.Log(collisionActuelle.Contains(collision.transform.gameObject));
             collisionActuelle.Remove(collision.gameObject);

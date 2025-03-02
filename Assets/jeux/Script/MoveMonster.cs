@@ -4,7 +4,7 @@ using UnityEngine;
 public class MoveMonster : MonoBehaviour
 {
 
-    [SerializeField] float vitesse;
+    [SerializeField] float vitesse, intervalVitesse;
     [SerializeField] int degats, IntervalDegatRandom;
     int index = 0;
      Vector3 TargetPosition;
@@ -13,6 +13,7 @@ public class MoveMonster : MonoBehaviour
     private void OnEnable()
     {
         degats = Random.Range((degats - IntervalDegatRandom), (degats + IntervalDegatRandom + 1));
+        vitesse = Random.Range((vitesse - intervalVitesse), (vitesse + intervalVitesse + 1));
         TargetPosition = GenerationMaps.ListeChemain[index].transform.position;
         transform.forward = new Vector3(transform.position.x - TargetPosition.x, 0, transform.position.z - TargetPosition.z);
         
